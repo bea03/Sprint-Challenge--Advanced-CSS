@@ -1,3 +1,9 @@
+.link-profile {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #454A59;
+  margin: 5px 0;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -169,6 +175,9 @@ p {
   flex-direction: column;
   width: 98%;
   padding: 10px 50px;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #dee2e6;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .navigation {
@@ -177,11 +186,14 @@ p {
     text-align: center;
   }
 }
+.navigation h1 {
+  text-align: center;
+  margin: 20px 0;
+}
 .navigation nav {
-  width: 60%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -194,6 +206,7 @@ p {
   font-size: 1.6rem;
   text-decoration: none;
   color: #454A59;
+  margin: 5px 0;
 }
 footer {
   color: #22283B;
@@ -306,6 +319,8 @@ footer {
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+  border-radius: 20px;
+  height: 100%;
 }
 .home .walk .walk-img img {
   width: 100%;
