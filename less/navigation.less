@@ -1,1 +1,40 @@
 // Navigation code here
+.navigation {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 10px 50px;
+    background-color: @footer-background;
+    border-bottom: 1px solid @main-border-color;
+    align-items: center;
+    
+   @media @phone {
+        flex-direction: column;
+        width: 98%;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between; 
+        white-space: nowrap;
+    
+
+        @media @phone {
+            justify-content: space-between;
+            width: 98%;
+            padding: 0 25px;
+        } 
+               
+        a {
+            .link-profile();
+        }    
+    }
+} //navigation

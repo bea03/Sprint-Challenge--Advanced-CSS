@@ -1,1 +1,36 @@
 // Mixins Here
+//button parameter mixin
+.btn-profile(@btn-color, @btn-font-color, @btn-border-color) {
+    width: 30%;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: @btn-color;
+    border: 1px solid @btn-border-color;
+    color: @btn-font-color;
+    cursor: pointer;
+    font-size: 2rem;
+  
+    &:hover {
+      background-color: @btn-font-color;;
+      color: @btn-color;;
+    }
+
+    @media @phone {
+        .phone-width();
+        padding: 25px;
+    }
+}
+
+//mixin
+.phone-width {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.link-profile {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: @nav-font;
+    margin: 5px 0;
+}
