@@ -1,6 +1,6 @@
 // Mixins Here
 //button parameter mixin
-.btn-profile(@btn-color, @btn-font-size, @btn-font-color, @btn-border-color) {
+.btn-profile(@btn-color, @btn-font-color, @btn-border-color) {
     width: 30%;
     padding: 7px;
     border-radius: 5px;
@@ -9,10 +9,18 @@
     border: 1px solid @btn-border-color;
     color: @btn-font-color;
     cursor: pointer;
-    font-size: @btn-font-size;
+    font-size: 2rem;
   
     &:hover {
-      background-color: darken(@btn-color, 5%);
-      color: darken(@btn-font-color, 5%);
+      background-color: @btn-font-color;;
+      color: @btn-color;;
+    }
+
+    @media @phone {
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px;
     }
 }
+
+//mixin
