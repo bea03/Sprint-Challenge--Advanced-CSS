@@ -24,15 +24,17 @@
         width: 30%;
         display: flex;
         justify-content: space-between; 
+        white-space: nowrap;
+    
 
-    @media @phone {
-        justify-content: space-between;
-        width: 98%;
-        padding: 25px;
-    } 
+        @media @phone {
+            justify-content: space-between;
+            width: 98%;
+            padding: 0 25px;
+        } 
                
-    a {
-        .link-profile();
-    }    
+        a {
+            .link-profile();
+        }    
     }
 } //navigation
