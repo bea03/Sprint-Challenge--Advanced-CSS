@@ -1,1 +1,18 @@
 // Mixins Here
+//button parameter mixin
+.btn-profile(@btn-color, @btn-font-size, @btn-font-color, @btn-border-color) {
+    width: 30%;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: @btn-color;
+    border: 1px solid @btn-border-color;
+    color: @btn-font-color;
+    cursor: pointer;
+    font-size: @btn-font-size;
+  
+    &:hover {
+      background-color: darken(@btn-color, 5%);
+      color: darken(@btn-font-color, 5%);
+    }
+}
